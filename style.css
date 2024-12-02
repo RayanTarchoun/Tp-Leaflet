@@ -1,0 +1,100 @@
+body {
+    text-align: center;
+    font-family: helvetica;
+}
+
+.app {
+    width: 100vw;
+    height: 70vh;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+#map {
+    margin-right: 2rem;
+    width: 78vw;
+    z-index: 0;
+}
+
+#cards {
+    width: 48vw;
+    display: grid;
+    grid-template-columns: repeat(4, 12vw);
+}
+
+.card {
+    margin: 0.8rem;
+    text-align: left;
+    padding: 12px;
+    border: solid 1px gray;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.3s;
+    box-shadow: 10px 10px lightblue;
+}
+
+.card:hover {
+    transform : scale(1.1, 1.1);
+}
+
+h1 {
+    color: rgb(35, 100, 146);
+    text-align: center;
+}
+
+h2 {
+    color: black;
+}
+
+h3 {
+    color: rgb(35, 100, 146);
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.active {
+    filter: hue-rotate(150deg);
+}
+
+.guess {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#distance {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.city {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.popup {
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+    min-width: 8rem;
+    min-height: 4rem;
+    width: fit-content;
+    position: fixed;
+    top: 4rem;
+    right: 6rem;
+    z-index: 1;
+    border-radius: 20px;
+    background: #fafafa;
+    box-shadow:  20px 20px 60px #d5d5d5,
+                -20px -20px 60px #ffffff;
+}
+
+.next {
+    background-color: rgb(15, 42, 111);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    padding: 6px 12px;
+}
+
